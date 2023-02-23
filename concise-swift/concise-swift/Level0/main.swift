@@ -160,6 +160,12 @@ import Foundation
 //}
 
 // MARK: - 23. 짝수는 싫어요
-func solution(_ n:Int) -> [Int] {
-    return (1...n).filter { $0 % 2 != 0 }
+//func solution(_ n:Int) -> [Int] {
+//    return (1...n).filter { $0 % 2 != 0 }
+//}
+
+// MARK: - 24. 중앙값 구하기
+func solution(_ array:[Int]) -> Int {
+    var centerIndex =  array.count / 2
+    return array.sorted()[centerIndex]
 }
