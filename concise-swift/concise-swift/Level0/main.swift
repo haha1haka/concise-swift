@@ -13,6 +13,12 @@ import Foundation
 //}
 
 // MARK: - 27. 편지
-func solution(_ message:String) -> Int {
-    return message.count * 2
+//func solution(_ message:String) -> Int {
+//    return message.count * 2
+//}
+
+// MARK: - 28. 최댓값 만들기 (1)
+func solution(_ numbers:[Int]) -> Int {
+    let sortedArr = numbers.sorted()
+    return sortedArr[numbers.count - 1] * sortedArr[numbers.count - 2]
 }
