@@ -98,17 +98,27 @@ import Foundation
 
 
 // MARK: - 16. 문자 반복 출력하기
-func solution(_ my_string:String, _ n:Int) -> String {
-    var arr = my_string.map { String($0) }
-    var resultArr: [String] = []
-    
-    arr.forEach { ele in
-        (1...n).forEach { _ in
-            resultArr.append(ele)
+//func solution(_ my_string:String, _ n:Int) -> String {
+//    var arr = my_string.map { String($0) }
+//    var resultArr: [String] = []
+//
+//    arr.forEach { ele in
+//        (1...n).forEach { _ in
+//            resultArr.append(ele)
+//        }
+//    }
+//    return resultArr.joined()
+//}
+
+
+// MARK: - 17. 순서쌍의 개수
+func solution(_ n:Int) -> Int {
+    var result = 0
+    (1...n).forEach {
+        if n % $0 == 0 {
+            result += 1
         }
     }
-    return resultArr.joined()
+    return result
 }
-
-
 
