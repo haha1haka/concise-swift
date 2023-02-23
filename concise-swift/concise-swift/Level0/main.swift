@@ -123,11 +123,23 @@ import Foundation
 //}
 
 // MARK: - 18. 특정 문자 제거하기
-func solution(_ my_string:String, _ letter:String) -> String {
-    return my_string.filter{String($0) != letter}
-}
+//func solution(_ my_string:String, _ letter:String) -> String {
+//    return my_string.filter{String($0) != letter}
+//}
 
-          
+// MARK: - 19. 옷가게 할인 받기
+func solution(_ price:Int) -> Int {
+    switch price {
+    case 100000..<300000:
+        return Int(Double(price) * 0.95)
+    case 300000..<500000:
+        return Int(Double(price) * 0.90)
+    case 500000...:
+        return Int(Double(price) * 0.80)
+    default:
+        return price
+    }
+}
 
 
 
