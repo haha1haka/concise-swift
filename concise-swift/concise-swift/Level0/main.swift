@@ -147,9 +147,14 @@ import Foundation
 //}
 
 // MARK: - 21. 배열의 유사도
-func solution(_ s1:[String], _ s2:[String]) -> Int {
-    return s1.filter{ s2.contains($0) }.count
-}
-func solution2(_ s1:[String], _ s2:[String]) -> Int {
-    return s1.map{ s2.contains($0) }.filter { $0 }.count
-}
+//func solution(_ s1:[String], _ s2:[String]) -> Int {
+//    return s1.filter{ s2.contains($0) }.count
+//}
+//func solution2(_ s1:[String], _ s2:[String]) -> Int {
+//    return s1.map{ s2.contains($0) }.filter { $0 }.count
+//}
+
+// MARK: - 22. 아이스 아메리카노
+//func solution(_ money:Int) -> [Int] {
+//    return [money / 5500, money % 5500]
+//}
