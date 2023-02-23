@@ -142,7 +142,11 @@ import Foundation
 //}
 
 // MARK: - 20. 배열 두 배 만들기
-func solution(_ numbers:[Int]) -> [Int] {
-    return numbers.map { $0 * 2 }
-}
+//func solution(_ numbers:[Int]) -> [Int] {
+//    return numbers.map { $0 * 2 }
+//}
 
+// MARK: - 21. 배열의 유사도
+func solution(_ s1:[String], _ s2:[String]) -> Int {
+    return s1.filter{ s2.contains($0) }.count
+}
