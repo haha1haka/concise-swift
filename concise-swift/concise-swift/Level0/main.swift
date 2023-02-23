@@ -87,4 +87,11 @@ import Foundation
 
 
 
-// MARK: -
+// MARK: - 15. 삼각형의 완성조건
+func solution(_ sides:[Int]) -> Int {
+    let sortedSides = sides.sorted(by: <)
+    let max = sortedSides[2]
+    let a = sortedSides[0]
+    let b = sortedSides[1]
+    return a + b > max ? 1 : 2
+}
