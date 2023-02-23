@@ -158,3 +158,8 @@ import Foundation
 //func solution(_ money:Int) -> [Int] {
 //    return [money / 5500, money % 5500]
 //}
+
+// MARK: - 23. 짝수는 싫어요
+func solution(_ n:Int) -> [Int] {
+    return (1...n).filter { $0 % 2 != 0 }
+}
