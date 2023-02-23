@@ -128,19 +128,21 @@ import Foundation
 //}
 
 // MARK: - 19. 옷가게 할인 받기
-func solution(_ price:Int) -> Int {
-    switch price {
-    case 100000..<300000:
-        return Int(Double(price) * 0.95)
-    case 300000..<500000:
-        return Int(Double(price) * 0.90)
-    case 500000...:
-        return Int(Double(price) * 0.80)
-    default:
-        return price
-    }
+//func solution(_ price:Int) -> Int {
+//    switch price {
+//    case 100000..<300000:
+//        return Int(Double(price) * 0.95)
+//    case 300000..<500000:
+//        return Int(Double(price) * 0.90)
+//    case 500000...:
+//        return Int(Double(price) * 0.80)
+//    default:
+//        return price
+//    }
+//}
+
+// MARK: - 20. 배열 두 배 만들기
+func solution(_ numbers:[Int]) -> [Int] {
+    return numbers.map { $0 * 2 }
 }
-
-
-
 
