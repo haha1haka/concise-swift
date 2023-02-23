@@ -112,13 +112,23 @@ import Foundation
 
 
 // MARK: - 17. 순서쌍의 개수
-func solution(_ n:Int) -> Int {
-    var result = 0
-    (1...n).forEach {
-        if n % $0 == 0 {
-            result += 1
-        }
-    }
-    return result
+//func solution(_ n:Int) -> Int {
+//    var result = 0
+//    (1...n).forEach {
+//        if n % $0 == 0 {
+//            result += 1
+//        }
+//    }
+//    return result
+//}
+
+// MARK: - 18. 특정 문자 제거하기
+func solution(_ my_string:String, _ letter:String) -> String {
+    return my_string.filter{String($0) != letter}
 }
+
+          
+
+
+
 
