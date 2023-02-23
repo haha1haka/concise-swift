@@ -88,10 +88,27 @@ import Foundation
 
 
 // MARK: - 15. 삼각형의 완성조건
-func solution(_ sides:[Int]) -> Int {
-    let sortedSides = sides.sorted(by: <)
-    let max = sortedSides[2]
-    let a = sortedSides[0]
-    let b = sortedSides[1]
-    return a + b > max ? 1 : 2
+//func solution(_ sides:[Int]) -> Int {
+//    let sortedSides = sides.sorted(by: <)
+//    let max = sortedSides[2]
+//    let a = sortedSides[0]
+//    let b = sortedSides[1]
+//    return a + b > max ? 1 : 2
+//}
+
+
+// MARK: - 16. 문자 반복 출력하기
+func solution(_ my_string:String, _ n:Int) -> String {
+    var arr = my_string.map { String($0) }
+    var resultArr: [String] = []
+    
+    arr.forEach { ele in
+        (1...n).forEach { _ in
+            resultArr.append(ele)
+        }
+    }
+    return resultArr.joined()
 }
+
+
+
