@@ -72,11 +72,21 @@ import Foundation
 //}
 
 // MARK: - 38. 대문자와 소문자
-func solution(_ my_string:String) -> String {
-    return my_string.map {
-        let lo = String($0).lowercased()
-        let up = String($0).uppercased()
-        return String($0) == lo ? up : lo
-    }
-    .joined()
+//func solution(_ my_string:String) -> String {
+//    return my_string.map {
+//        let lo = String($0).lowercased()
+//        let up = String($0).uppercased()
+//        return String($0) == lo ? up : lo
+//    }
+//    .joined()
+//}
+
+// MARK: - 39. 암호 해독
+func solution(_ cipher:String, _ code:Int) -> String {
+    let arr = cipher.map { String($0) }
+    let arrCount = arr.count
+    let t = arrCount / code
+    return (1...t).map { arr[code*$0-1] }.joined()
 }
+
+
