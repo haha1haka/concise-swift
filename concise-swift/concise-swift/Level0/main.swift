@@ -112,6 +112,8 @@ import Foundation
 //    return (box[0] / n) * (box[1] / n) * (box[2] / n)
 //}
 
-// MARK: - 44. 최댓값 만들기(2)
-
+// MARK: - 44. 배열 뒤집기
+//func solution(_ num_list:[Int]) -> [Int] {
+//    return (0..<num_list.count).map { num_list[num_list.count - $0 - 1] }
+//}
 
