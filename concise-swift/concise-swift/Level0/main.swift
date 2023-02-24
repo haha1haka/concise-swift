@@ -90,6 +90,14 @@ import Foundation
 //}
 
 // MARK: - 40. 문자열 정렬하기(1)
-func solution(_ my_string:String) -> [Int] {
-    return my_string.compactMap{ Int(String($0)) }.sorted()
+//func solution(_ my_string:String) -> [Int] {
+//    return my_string.compactMap{ Int(String($0)) }.sorted()
+//}
+
+// MARK: - 41. 직각삼각형 출력하기
+let n = readLine()!.components(separatedBy: [" "]).map { Int($0)! }
+n.forEach { i in
+    (1...i).forEach { j in
+        print(String(repeating: "*", count: j))
+    }
 }
