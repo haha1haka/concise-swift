@@ -138,4 +138,10 @@ import Foundation
 //    arr.swapAt(num1, num2)
 //    return arr.map { String($0) }.joined()
 //}
-
+func solution(_ my_string:String, _ num1:Int, _ num2:Int) -> String {
+    var arr = my_string.map{String($0)}
+    let temp = arr[num1]
+    arr[num1] = arr[num2]
+    arr[num2] = temp
+    return arr.joined()
+}
