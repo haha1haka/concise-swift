@@ -138,10 +138,21 @@ import Foundation
 //    arr.swapAt(num1, num2)
 //    return arr.map { String($0) }.joined()
 //}
-func solution(_ my_string:String, _ num1:Int, _ num2:Int) -> String {
-    var arr = my_string.map{String($0)}
-    let temp = arr[num1]
-    arr[num1] = arr[num2]
-    arr[num2] = temp
-    return arr.joined()
+//func solution(_ my_string:String, _ num1:Int, _ num2:Int) -> String {
+//    var arr = my_string.map{String($0)}
+//    let temp = arr[num1]
+//    arr[num1] = arr[num2]
+//    arr[num2] = temp
+//    return arr.joined()
+//}
+
+// MARK: - 49. 최댓값 만들기(2)
+func solution(_ numbers:[Int]) -> Int {
+    return (0..<numbers.count).flatMap { i in
+        (i+1..<numbers.count).map { j in
+            return numbers[i] * numbers[j]
+        }
+    }
+    .sorted()
+    .last!
 }
