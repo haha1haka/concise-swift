@@ -118,6 +118,11 @@ import Foundation
 //}
 
 // MARK: - 45. 배열 원소의 길이
-func solution(_ strlist:[String]) -> [Int] {
-    return strlist.map { $0.count }
+//func solution(_ strlist:[String]) -> [Int] {
+//    return strlist.map { $0.count }
+//}
+
+// MARK: - 46. 머쓱이보다 키 큰 사람
+func solution(_ array:[Int], _ height:Int) -> Int {
+    return array.filter { $0 > height }.count
 }
