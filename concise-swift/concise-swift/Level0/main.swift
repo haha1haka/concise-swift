@@ -123,6 +123,11 @@ import Foundation
 //}
 
 // MARK: - 46. 머쓱이보다 키 큰 사람
-func solution(_ array:[Int], _ height:Int) -> Int {
-    return array.filter { $0 > height }.count
+//func solution(_ array:[Int], _ height:Int) -> Int {
+//    return array.filter { $0 > height }.count
+//}
+
+// MARK: - 47. 피자 나눠먹기(1)
+func solution(_ n: Int) -> Int {
+    return n / 7 + (n % 7 > 0 ? 1 : 0)
 }
