@@ -67,6 +67,16 @@ import Foundation
 //}
 
 // MARK: - 37. 가위 바위 보
-func solution(_ rsp:String) -> String {
-    return rsp.map{$0 == "0" ? "5" : $0 == "2" ? "0" : "2"}.joined()
+//func solution(_ rsp:String) -> String {
+//    return rsp.map{$0 == "0" ? "5" : $0 == "2" ? "0" : "2"}.joined()
+//}
+
+// MARK: - 38. 대문자와 소문자
+func solution(_ my_string:String) -> String {
+    return my_string.map {
+        let lo = String($0).lowercased()
+        let up = String($0).uppercased()
+        return String($0) == lo ? up : lo
+    }
+    .joined()
 }
