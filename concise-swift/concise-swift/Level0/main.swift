@@ -117,3 +117,7 @@ import Foundation
 //    return (0..<num_list.count).map { num_list[num_list.count - $0 - 1] }
 //}
 
+// MARK: - 45. 배열 원소의 길이
+func solution(_ strlist:[String]) -> [Int] {
+    return strlist.map { $0.count }
+}
