@@ -24,25 +24,31 @@ import Foundation
 //}
 
 // MARK: - 29. 피자 나눠 먹기(3)
-func solution(_ slice:Int, _ n:Int) -> Int {
-    return (n % slice) == 0 ? (n / slice) : (n / slice + 1)
-}
+//func solution(_ slice:Int, _ n:Int) -> Int {
+//    return (n % slice) == 0 ? (n / slice) : (n / slice + 1)
+//}
 // MARK: - 30. 중복딘 숫자 개수
-func solution(_ array:[Int], _ n:Int) -> Int {
-    return array.filter { $0 == n }.count
-}
+//func solution(_ array:[Int], _ n:Int) -> Int {
+//    return array.filter { $0 == n }.count
+//}
 
 // MARK: - 31. 자릿수 더하기
-func solution(_ n:Int) -> Int {
-    return String(n).map { Int(String($0))! }.reduce(0, { $0 + $1 })
-}
+//func solution(_ n:Int) -> Int {
+//    return String(n).map { Int(String($0))! }.reduce(0, { $0 + $1 })
+//}
 
 // MARK: - 32. 숨어있는 숫자의 덧셈(1)
-func solution(_ my_string:String) -> Int {
-     return my_string.compactMap{Int(String($0))}.reduce(0,+)
-}
+//func solution(_ my_string:String) -> Int {
+//     return my_string.compactMap{Int(String($0))}.reduce(0,+)
+//}
+
 // MARK: - 33. 문자열안에 문자열
-func solution(_ str1:String, _ str2:String) -> Int {
-    return str1.contains(str2) ? 1 : 2
+//func solution(_ str1:String, _ str2:String) -> Int {
+//    return str1.contains(str2) ? 1 : 2
+//}
+
+// MARK: - 모음제거
+func solution(_ my_string:String) -> String {
+    return my_string.filter { !["a", "e", "i", "o", "u"].contains($0)}
 }
 
