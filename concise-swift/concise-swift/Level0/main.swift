@@ -108,7 +108,10 @@ import Foundation
 //}
 
 // MARK: - 43. 주사위의 개수
-func solution(_ box:[Int], _ n:Int) -> Int {
-    return (box[0] / n) * (box[1] / n) * (box[2] / n)
-}
+//func solution(_ box:[Int], _ n:Int) -> Int {
+//    return (box[0] / n) * (box[1] / n) * (box[2] / n)
+//}
+
+// MARK: - 44. 최댓값 만들기(2)
+
 
