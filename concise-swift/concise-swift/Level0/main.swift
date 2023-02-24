@@ -32,3 +32,10 @@ func solution(_ array:[Int], _ n:Int) -> Int {
     return array.filter { $0 == n }.count
 }
 
+// MARK: - 자릿수 더하기
+func solution(_ n:Int) -> Int {
+    return String(n).map { Int(String($0))! }.reduce(0, { $0 + $1 })
+}
+
+
+
