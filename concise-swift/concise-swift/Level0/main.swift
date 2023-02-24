@@ -58,10 +58,15 @@ import Foundation
 //}
 
 // MARK: - 36. 세균 증식
-func solution(_ n:Int, _ t:Int) -> Int {
-    var result = n
-    (1...t).forEach { _ in
-        result *= 2
-    }
-    return result
+//func solution(_ n:Int, _ t:Int) -> Int {
+//    var result = n
+//    (1...t).forEach { _ in
+//        result *= 2
+//    }
+//    return result
+//}
+
+// MARK: - 37. 가위 바위 보
+func solution(_ rsp:String) -> String {
+    return rsp.map{$0 == "0" ? "5" : $0 == "2" ? "0" : "2"}.joined()
 }
