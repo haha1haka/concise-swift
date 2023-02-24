@@ -128,6 +128,14 @@ import Foundation
 //}
 
 // MARK: - 47. 피자 나눠먹기(1)
-func solution(_ n: Int) -> Int {
-    return n / 7 + (n % 7 > 0 ? 1 : 0)
-}
+//func solution(_ n: Int) -> Int {
+//    return n / 7 + (n % 7 > 0 ? 1 : 0)
+//}
+
+// MARK: - 48. 인덱스 바꾸기
+//func solution(_ myString: String, _ num1: Int, _ num2: Int) -> String {
+//    var arr = myString.map { String($0) }
+//    arr.swapAt(num1, num2)
+//    return arr.map { String($0) }.joined()
+//}
+
