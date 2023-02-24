@@ -103,8 +103,12 @@ import Foundation
 //}
 
 // MARK: - 42. n의 배수 고르기
-func solution(_ n:Int, _ numlist:[Int]) -> [Int] {
-    return numlist.filter { $0 % n == 0 }
-}
+//func solution(_ n:Int, _ numlist:[Int]) -> [Int] {
+//    return numlist.filter { $0 % n == 0 }
+//}
 
+// MARK: - 43. 주사위의 개수
+func solution(_ box:[Int], _ n:Int) -> Int {
+    return (box[0] / n) * (box[1] / n) * (box[2] / n)
+}
 
