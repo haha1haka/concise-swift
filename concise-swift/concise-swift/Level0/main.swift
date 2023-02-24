@@ -47,8 +47,12 @@ import Foundation
 //    return str1.contains(str2) ? 1 : 2
 //}
 
-// MARK: - 모음제거
-func solution(_ my_string:String) -> String {
-    return my_string.filter { !["a", "e", "i", "o", "u"].contains($0)}
-}
+// MARK: - 34. 모음제거
+//func solution(_ my_string:String) -> String {
+//    return my_string.filter { !["a", "e", "i", "o", "u"].contains($0)}
+//}
 
+// MARK: - 35. 제곱수 판별하기
+func solution(_ n:Int) -> Int {
+    return (1...n).filter { n % $0 == 0 }.count % 2 != 0 ? 1 : 2
+}
