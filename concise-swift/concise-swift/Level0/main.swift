@@ -41,5 +41,8 @@ func solution(_ n:Int) -> Int {
 func solution(_ my_string:String) -> Int {
      return my_string.compactMap{Int(String($0))}.reduce(0,+)
 }
-
+// MARK: - 33. 문자열안에 문자열
+func solution(_ str1:String, _ str2:String) -> Int {
+    return str1.contains(str2) ? 1 : 2
+}
 
