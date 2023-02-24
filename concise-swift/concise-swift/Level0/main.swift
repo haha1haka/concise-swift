@@ -53,6 +53,15 @@ import Foundation
 //}
 
 // MARK: - 35. 제곱수 판별하기
-func solution(_ n:Int) -> Int {
-    return (1...n).filter { n % $0 == 0 }.count % 2 != 0 ? 1 : 2
+//func solution(_ n:Int) -> Int {
+//    return (1...n).filter { n % $0 == 0 }.count % 2 != 0 ? 1 : 2
+//}
+
+// MARK: - 36. 세균 증식
+func solution(_ n:Int, _ t:Int) -> Int {
+    var result = n
+    (1...t).forEach { _ in
+        result *= 2
+    }
+    return result
 }
