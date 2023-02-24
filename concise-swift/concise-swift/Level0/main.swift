@@ -27,4 +27,8 @@ import Foundation
 func solution(_ slice:Int, _ n:Int) -> Int {
     return (n % slice) == 0 ? (n / slice) : (n / slice + 1)
 }
+// MARK: - 30. 중복딘 숫자 개수
+func solution(_ array:[Int], _ n:Int) -> Int {
+    return array.filter { $0 == n }.count
+}
 
