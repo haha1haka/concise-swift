@@ -82,11 +82,14 @@ import Foundation
 //}
 
 // MARK: - 39. 암호 해독
-func solution(_ cipher:String, _ code:Int) -> String {
-    let arr = cipher.map { String($0) }
-    let arrCount = arr.count
-    let t = arrCount / code
-    return (1...t).map { arr[code*$0-1] }.joined()
+//func solution(_ cipher:String, _ code:Int) -> String {
+//    let arr = cipher.map { String($0) }
+//    let arrCount = arr.count
+//    let t = arrCount / code
+//    return (1...t).map { arr[code*$0-1] }.joined()
+//}
+
+// MARK: - 40. 문자열 정렬하기(1)
+func solution(_ my_string:String) -> [Int] {
+    return my_string.compactMap{ Int(String($0)) }.sorted()
 }
-
-
