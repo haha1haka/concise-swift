@@ -95,9 +95,16 @@ import Foundation
 //}
 
 // MARK: - 41. 직각삼각형 출력하기
-let n = readLine()!.components(separatedBy: [" "]).map { Int($0)! }
-n.forEach { i in
-    (1...i).forEach { j in
-        print(String(repeating: "*", count: j))
-    }
+//let n = readLine()!.components(separatedBy: [" "]).map { Int($0)! }
+//n.forEach { i in
+//    (1...i).forEach { j in
+//        print(String(repeating: "*", count: j))
+//    }
+//}
+
+// MARK: - 42. n의 배수 고르기
+func solution(_ n:Int, _ numlist:[Int]) -> [Int] {
+    return numlist.filter { $0 % n == 0 }
 }
+
+
