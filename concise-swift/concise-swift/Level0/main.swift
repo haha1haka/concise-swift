@@ -18,7 +18,13 @@ import Foundation
 //}
 
 // MARK: - 28. 최댓값 만들기 (1)
-func solution(_ numbers:[Int]) -> Int {
-    let sortedArr = numbers.sorted()
-    return sortedArr[numbers.count - 1] * sortedArr[numbers.count - 2]
+//func solution(_ numbers:[Int]) -> Int {
+//    let sortedArr = numbers.sorted()
+//    return sortedArr[numbers.count - 1] * sortedArr[numbers.count - 2]
+//}
+
+// MARK: - 29. 피자 나눠 먹기(3)
+func solution(_ slice:Int, _ n:Int) -> Int {
+    return (n % slice) == 0 ? (n / slice) : (n / slice + 1)
 }
+
