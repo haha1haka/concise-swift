@@ -147,12 +147,22 @@ import Foundation
 //}
 
 // MARK: - 49. 최댓값 만들기(2)
-func solution(_ numbers:[Int]) -> Int {
-    return (0..<numbers.count).flatMap { i in
-        (i+1..<numbers.count).map { j in
-            return numbers[i] * numbers[j]
-        }
-    }
-    .sorted()
-    .last!
+//func solution(_ numbers:[Int]) -> Int {
+//    return (0..<numbers.count).flatMap { i in
+//        (i+1..<numbers.count).map { j in
+//            return numbers[i] * numbers[j]
+//        }
+//    }
+//    .sorted()
+//    .last!
+//}
+
+// MARK: - 50. 가장 큰 수 찾기
+func solution(_ array: [Int]) -> [Int] {
+    return [array.max() ?? 0, array.firstIndex(of: array.max() ?? 0) ?? 0]
+}
+
+func solution2(_ array:[Int]) -> [Int] {
+    let max = array.enumerated().max(by: { $0.element < $1.element })!
+    return [max.element, max.offset]
 }
