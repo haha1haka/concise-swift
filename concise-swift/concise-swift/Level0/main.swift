@@ -17,11 +17,16 @@ import Foundation
 //    .joined()
 //}
 
-// MARK: - 53. 피자 나워 먹기(2)
-func solution(_ n:Int) -> Int {
-    var a = 1
-    while n * a % 6 != 0 {
-        a += 1
-    }
-    return n * a / 6
+// MARK: - 53. 피자 나눠 먹기(2)
+//func solution(_ n:Int) -> Int {
+//    var a = 1
+//    while n * a % 6 != 0 {
+//        a += 1
+//    }
+//    return n * a / 6
+//}
+
+// MARK: - 54. 약수 구하기
+func solution(_ n:Int) -> [Int] {
+    return (1...n).filter { n % $0 == 0 }
 }
