@@ -27,6 +27,13 @@ import Foundation
 //}
 
 // MARK: - 54. 약수 구하기
-func solution(_ n:Int) -> [Int] {
-    return (1...n).filter { n % $0 == 0 }
+//func solution(_ n:Int) -> [Int] {
+//    return (1...n).filter { n % $0 == 0 }
+//}
+
+// MARK: - 55. 369게임
+func solution(_ order:Int) -> Int {
+    var arr = String(order).map { String($0) }
+    return arr.filter { $0 == "3" || $0 == "6" || $0 == "9"}.count
 }
+
