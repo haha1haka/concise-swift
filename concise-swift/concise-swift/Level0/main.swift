@@ -8,11 +8,20 @@ import Foundation
 //}
 
 // MARK: - 52. 외계행성의 나이
-func solution(_ age:Int) -> String {
-    var alpabet = "abcdefghij".map{ String($0) }
-    var arr = String(age).map { Int(String($0)) ?? 0 }
-    return (0..<arr.count).map {
-        return alpabet[arr[$0]]
+//func solution(_ age:Int) -> String {
+//    var alpabet = "abcdefghij".map{ String($0) }
+//    var arr = String(age).map { Int(String($0)) ?? 0 }
+//    return (0..<arr.count).map {
+//        return alpabet[arr[$0]]
+//    }
+//    .joined()
+//}
+
+// MARK: - 53. 피자 나워 먹기(2)
+func solution(_ n:Int) -> Int {
+    var a = 1
+    while n * a % 6 != 0 {
+        a += 1
     }
-    .joined()
+    return n * a / 6
 }
