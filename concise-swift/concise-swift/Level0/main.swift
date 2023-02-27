@@ -42,3 +42,8 @@ func solution(_ num:Int, _ k:Int) -> Int {
     let arr = String(num).map { Int(String($0))! }
     return arr.contains(k) ? arr.firstIndex(where: {$0 == k})! + 1 : -1
 }
+
+// MARK: - 57. 문자열 정렬하기(2)
+func solution(_ my_string:String) -> String {
+    return my_string.map { String($0).lowercased() }.sorted().joined()
+}
