@@ -32,8 +32,13 @@ import Foundation
 //}
 
 // MARK: - 55. 369게임
-func solution(_ order:Int) -> Int {
-    var arr = String(order).map { String($0) }
-    return arr.filter { $0 == "3" || $0 == "6" || $0 == "9"}.count
-}
+//func solution(_ order:Int) -> Int {
+//    var arr = String(order).map { String($0) }
+//    return arr.filter { $0 == "3" || $0 == "6" || $0 == "9"}.count
+//}
 
+// MARK: - 56. 숫자 찾기
+func solution(_ num:Int, _ k:Int) -> Int {
+    let arr = String(num).map { Int(String($0))! }
+    return arr.contains(k) ? arr.firstIndex(where: {$0 == k})! + 1 : -1
+}
