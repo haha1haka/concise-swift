@@ -49,10 +49,20 @@ import Foundation
 //}
 
 // MARK: - 58. 합성수 찾기
-func solution(_ n: Int) -> Int {
-    return (1...n).filter { i in
-        return (1...i).filter { i % $0 == 0 }.count > 2
-    }.count
-    
-}
+//func solution(_ n: Int) -> Int {
+//    return (1...n).filter { i in
+//        return (1...i).filter { i % $0 == 0 }.count > 2
+//    }.count
+//
+//}
 
+// MARK: - 59. 중복된 문자 제거
+func solution(_ my_string:String) -> String {
+    var result = ""
+    my_string.forEach {
+        if !result.contains($0) {
+            result += String($0)
+        }
+    }
+    return result
+}
